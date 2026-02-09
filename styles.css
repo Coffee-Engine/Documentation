@@ -125,6 +125,28 @@ code {
     white-space: pre;
 }
 
+table {
+    border-collapse: collapse;
+    margin: 4px;
+    max-width: calc(100% - 8px);
+}
+
+table,
+th,
+td {
+    border: 1px solid var(--text-color);
+}
+
+th, td { padding: 4px 10px 4px 10px; min-width: 32px; }
+
+th {
+    text-align: center;
+    height: 50px;
+}
+tr {
+    background: #00000333;
+}
+
 .cm-keyword { color: var(--keyword); }
 .cm-variable { color: var(--variable); }
 .cm-comment { color: var(--comments); font-style: italic; }
