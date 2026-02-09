@@ -4,3 +4,4 @@ Artimus is a free, and open sourced art program made initially for use within Co
 
 ## Pages
 - [File Format](?page=artimus/format)
+- [Tools](?page=artimus/tools)
