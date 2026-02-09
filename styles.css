@@ -1,20 +1,20 @@
 body {
-    --cite-color: #cefff650;
+    --cite-color: #ffe6ce50;
     --cite-border: 0px solid var(--cite-color);
     --cite-border-hovered: 3px solid var(--cite-color);
 
     --code-border: 3px solid var(--link-visited-color);
     
-    --background-color: #201e2c;
-    --text-color: #c4e7e0;
+    --background-color: #2c201e;
+    --text-color: #e7d8c4;
 
-    --link-normal-color: #a5f1e2;
-    --link-hover-color: #92c5dd;
-    --link-visited-color: #6e93cc;
+    --link-normal-color: #f1a5a5;
+    --link-hover-color: #dd9292;
+    --link-visited-color: #cc6e6e;
 
     --keyword: #ec9634;
     --variable: #e6d576;
-    --comments: #728386;
+    --comments: #867772;
     --numbers: #99e676;
     --strings: #76e6d7;
     --built-in: #ec5934;
