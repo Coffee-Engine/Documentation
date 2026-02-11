@@ -114,7 +114,7 @@ The following properties are passed into it.
 |toolProperties| Object       | This value is the workspace's tool properties.                                                                |
 
 ### rerenderBounds `rerenderBounds(gl, previewGL, context, toolProperties) -> [x, y, w, h] || bool || undefined`
-As of "Γ 1.1" (Gamma 1.1) this does nothing, but the function's idea is to return the bounds of where to redraw, allowing for artimus to be drawn more efficiently while keeping the valueable features of the canvas2D renderer.
+As of "Γ 1.1" (Gamma 1.1) this does nothing, but the function's idea is to return the bounds of where to redraw, allowing for artimus to be drawn more efficiently while keeping the valuable features of the canvas2D renderer.
 
 The following properties are passed into it.
 | Property     | Type         | Notes                                                                                                         |
