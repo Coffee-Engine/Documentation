@@ -115,17 +115,6 @@ The following properties are passed into it.
 | previewGL    | Context2D    | This is the canvas context of the preview layer.                                                              |
 |toolProperties| Object       | This value is the workspace's tool properties.                                                                |
 
-### rerenderBounds `rerenderBounds(gl, previewGL, context, toolProperties) -> [x, y, w, h] || bool || undefined`
-As of "Γ 1.1" (Gamma 1.1) this does nothing, but the function's idea is to return the bounds of where to redraw, allowing for artimus to be drawn more efficiently while keeping the valuable features of the canvas2D renderer.
-
-The following properties are passed into it.
-| Property     | Type         | Notes                                                                                                         |
-|--------------|--------------|---------------------------------------------------------------------------------------------------------------|
-| gl           | Context2D    | This is the canvas context of the current layer.                                                              |
-| previewGL    | Context2D    | This is the canvas context of the preview layer.                                                              |
-| context      | UseContext   | This object contains information on how the tool is currently being used. Like state and position.            |
-|toolProperties| Object       | This value is the workspace's tool properties.                                                                |
-
 
 ## Properties
 Tools come with a few properties you will have to configure, these are as follows.
