@@ -10,4 +10,4 @@ Artimus is a free, and open sourced art program made initially for use within Co
 - [Modals](?page=artimus/modals)
 
 ## For Extension Developers
-- [Tools](?page=artimus/extensiondev)
+- [Getting Started](?page=artimus/extensiondev)

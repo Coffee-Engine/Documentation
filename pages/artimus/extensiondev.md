@@ -7,3 +7,5 @@ or for a more local solution you can use [commandable-http-server](https://githu
 
 Either way you will want to turn on cors headers.
 For either one appending `--cors` as an argument should do the job.
+
+WIP!!!
