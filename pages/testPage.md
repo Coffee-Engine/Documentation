@@ -2,3 +2,5 @@
 [Artimus Icon](https://coffee-engine.github.io/Artimus/)
 [Coffee-Engine Icon](https://coffee-engine.github.io/)
 [Github Icon](https://github.com/)
+[Gitlab Icon](https://gitlab.com/)
+[NPM Icon](https://npmjs.com/)

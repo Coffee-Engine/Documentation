@@ -136,7 +136,7 @@ code {
     padding-left: 4px;
 }
 
-code > .cm-s-default {
+code.cm-s-default {
     display:block;
     overflow: auto;
 }

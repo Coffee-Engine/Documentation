@@ -2,5 +2,6 @@
     "coffee-engine.github.io": "images/icons/coffeeEngine.svg",
     "coffee-engine.github.io/Artimus": "images/icons/artimus.png",
     "github.com": "images/icons/repository.svg",
-    "gitlab.com": "images/icons/repository.svg"
+    "gitlab.com": "images/icons/repository.svg",
+    "npmjs.com": "images/icons/npm.png"
 }
