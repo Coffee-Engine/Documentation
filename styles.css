@@ -35,7 +35,7 @@ h1 {
     transition: 100ms border-left;
 }
 
-h1:hover { border-left: var(--cite-border-hovered); }
+.readingArea > h1:hover { border-left: var(--cite-border-hovered); }
 
 h2 {
     border-left: var(--cite-border);
@@ -43,7 +43,7 @@ h2 {
     transition: 100ms border-left;
 }
 
-h2:hover { border-left: var(--cite-border-hovered); }
+.readingArea > h2:hover { border-left: var(--cite-border-hovered); }
 
 h3 {
     border-left: var(--cite-border);
@@ -51,7 +51,7 @@ h3 {
     transition: 100ms border-left;
 }
 
-h3:hover { border-left: var(--cite-border-hovered); }
+.readingArea > h3:hover { border-left: var(--cite-border-hovered); }
 
 h4 {
     border-left: var(--cite-border);
@@ -59,7 +59,7 @@ h4 {
     transition: 100ms border-left;
 }
 
-h4:hover { border-left: var(--cite-border-hovered); }
+.readingArea > h4:hover { border-left: var(--cite-border-hovered); }
 
 h5 {
     border-left: var(--cite-border);
@@ -67,7 +67,7 @@ h5 {
     transition: 100ms border-left;
 }
 
-h5:hover { border-left: var(--cite-border-hovered); }
+.readingArea > h5:hover { border-left: var(--cite-border-hovered); }
 
 p {
     border-left: var(--cite-border);
@@ -75,7 +75,7 @@ p {
     transition: 100ms border-left;
 }
 
-p:hover { border-left: var(--cite-border-hovered); }
+.readingArea > p:hover { border-left: var(--cite-border-hovered); }
 
 a {
     color: var(--link-normal-color);
@@ -97,6 +97,18 @@ img {
     image-rendering: pixelated;
 }
 
+a > img {
+    border: none;
+
+    aspect-ratio: 1;
+    min-width: 0px;
+    width: auto;
+    height: 1.5rem;
+
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
 .readingArea {
     min-height: 80%;
     margin: 0px;
@@ -112,17 +124,21 @@ footer {
 }
 
 code {
-    display:block;
     background-color: #00000333;
-    
-    margin-left: 16px;
-    margin-right: 16px;
-    padding-left: 4px;
 
     overflow: auto;
 
     border-left: var(--code-border);
     white-space: pre;
+    
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 4px;
+}
+
+code > .cm-s-default {
+    display:block;
+    overflow: auto;
 }
 
 table {

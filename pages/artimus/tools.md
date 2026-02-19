@@ -1,3 +1,5 @@
+[[Artimus Tools]]
+
 # Tools
 ## What are tools?
 Tools are the life, and blood of Artimus, these classes contain the code needed for drawing to Artimus' canvases.

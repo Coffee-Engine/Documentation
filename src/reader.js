@@ -1,29 +1,49 @@
+//The page loader
+const readingArea = document.getElementById("main");
+
+const loadPage = async (page, searchP) => {
+    //Fetch link icons
+    window.linkIcons = {};
+    try {
+        linkIcons = JSON.parse(await fetch("linkIcons.json").then(result => result.text()).catch((error) => {
+            console.warn(`Cannot fetch link icons!\n---===---\n${error}`);
+        }));
+    } catch (error) { console.warn(`Cannot parse link icon list!\n---===---\n${error}`)}
+    
+    //Then fetch and load the page
+    const text = await fetch(`pages/${page}.md`).then(result => result.text())
+
+    readingArea.innerHTML = marked.parse(text);
+
+    if (searchP.has("cite")) {
+        const found = Array.from(readingArea.children)[searchP.get("cite")];
+        window.scroll(0, found.getBoundingClientRect().top);
+    }
+}
+
+//Check if we have marked, if so load the page
 if (window.marked) {
     const searchP = new URLSearchParams(document.location.search);
     const page = searchP.get("page") || "index";
-    const readingArea = document.getElementById("main");
 
     docIdentifier += "-" + page;
-    
-    fetch(`pages/${page}.md`).then(result => result.text()).then(text => {
-        readingArea.innerHTML = marked.parse(text);
-
-        if (searchP.has("cite")) {
-            const found = Array.from(readingArea.children)[searchP.get("cite")];
-            window.scroll(0, found.getBoundingClientRect().top);
-        }
-    });
 
     document.addEventListener("click", (event) => {
         const target = event.target;
         if (target instanceof HTMLHeadingElement || target instanceof HTMLParagraphElement) {
             const found = Array.from(readingArea.children).indexOf(target);
-            searchP.set("cite", found);
-            window.navigator.clipboard.writeText(`${document.location.origin}${document.location.pathname}?${searchP.toString()}`);
+
+            if (found >= 0) {
+                searchP.set("cite", found);
+                window.navigator.clipboard.writeText(`${document.location.origin}${document.location.pathname}?${searchP.toString()}`);
+            }
         }
     });
+
+    loadPage(page, searchP);
 }
 
+//Various cool functions
 const download = (data, filename, type) => {
     var file = new Blob([data], { type: type });
 
@@ -86,7 +106,5 @@ document.getElementById("downloadPage").onclick = async () => {
     }
 
     await sanitize(parsed.documentElement);
-
-    console.log(parsed);
     download(parsed.documentElement.outerHTML, docIdentifier + ".html", "text/html");
 }

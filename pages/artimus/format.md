@@ -1,3 +1,5 @@
+[[Artimus File Format]]
+
 # ".artimus" Files
 ".artimus" files are the main way of saving a project in the Artimus editor. The format is a lossless, run-length encoded, layered image format.
 
