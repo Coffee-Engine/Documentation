@@ -91,7 +91,7 @@ Remember the strange text that was `myExtension.tool.helloWorld`? That is a lang
 }
 ```
 
-After that the `english.json` file can be added to the extension's json like so.
+After that the `english.json` file can be added to the extension's json by adding the path to the translations object with the `english` key.
 
 ```javascript
 {
@@ -107,3 +107,8 @@ After that the `english.json` file can be added to the extension's json like so.
 ```
 
 Now if you reload the tool should have it's proper name!
+
+## So what next?
+You may want to check out other pages. These may be good to check out first!
+- [Tools](?page=artimus/tools)
+- [Modals](?page=artimus/modals)
