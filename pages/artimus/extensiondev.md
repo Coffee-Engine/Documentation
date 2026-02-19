@@ -1,6 +1,8 @@
 [[Artimus Extension Development]]
 
 # Extension Development
+Extensions are a feature defined in the [Artimus web editor](https://coffee-engine.github.io/Artimus/)
+
 ## Preamble
 First you will need an HTTP server with cors support.
 
