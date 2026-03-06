@@ -48,10 +48,10 @@ The best way o doing this is to go into the editor's settings menu. In the gener
 
 ![The button in Artimus 1.4 Theta](images/artimus/language/TheButton.png)
 
-After importing your language you will want to open the developer console using `ctrl+shift+i` or by right clicking and using `inspect`. If you see any warnings that talk about a missing key you will want to add those to your language file, you may also want to cross examine the [English language file]() to make sure the translation is correct.i
+After importing your language you will want to open the developer console using `ctrl+shift+i` or by right clicking and using `inspect`. If you see any warnings that talk about a missing key you will want to add those to your language file, you may also want to cross examine the [English language file](https://github.com/Coffee-Engine/Artimus/blob/main/lang/english.json) to make sure the translation is correct.i
 
 ## Submitting your language!
-Now that you have your Artimus translated you may wish to submit your translation to the [main repository](https://github.com/Coffee-Engine/Artimus/) this can either be done by making a request in the [Coffee-Shop Discord](https://doscprd.gg/R4AhDBNZZZ7) under the `bugs-and-suggestions` forum or by making a pull request to the repository directly.
+Now that you have your Artimus translated you may wish to submit your translation to the [main repository](https://github.com/Coffee-Engine/Artimus/) this can either be done by making a request in the [Coffee-Shop Discord](https://discord.gg/R4AhDBNZZZ7) under the `bugs-and-suggestions` forum or by making a pull request to the repository directly.
 
 ### Using the forum
 When submitting via the forum it is suggested to make a flag, or icon for your language to submit alongside the JSON file, but otherwise you will want to add the "Language Addition" and "Artimus Related" tags to the post to help with visibility.
