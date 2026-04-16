@@ -9,6 +9,9 @@ Artimus is a free, and open sourced art program made initially for use within Co
 - [Tools](?page=artimus/tools)
 - [Modals](?page=artimus/modals)
 
+## For Translators
+- [Translating](?page=artimus/translating)
+
 ## For API use
 - [Configuration](?page=artimus/configuration)
 
