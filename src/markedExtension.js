@@ -2,6 +2,9 @@
     const titleRegex = /\[\[.+\]\]/;
     const titleTokenizer = new RegExp(`^${titleRegex.source}`);
 
+    const importantRegex = /!!\s+.+/;
+    const importantTokenizer = new RegExp(`^${importantRegex.source}`);
+
     marked.use({
         name: "daveDocsUtilities",
         renderer: {
@@ -48,6 +51,24 @@
                         type: "title",
                         raw: match[0],
                         title: match[0].substring(2, match[0].length - 2)
+                    }
+                },
+            },
+            {
+                name: "important",
+                level: 'inline',
+                renderer: (token) => {
+                    return `<div class="important">${token.content}</div>`;
+                },
+
+                tokenizer(src, tokens) {
+                    const match = importantTokenizer.exec(src);
+                    if (!match) return;
+
+                    return {
+                        type: "important",
+                        raw: match[0],
+                        content: match[0].replace(/!!\s+/, "")
                     }
                 },
             },
